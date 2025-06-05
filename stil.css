@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  font-family: Arial sans-serif;
+  line-height: 1.6;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: #660847;
+  height: 100px; 
+}
+
+header::before {
+  display: block;
+  height: 150px;
+}
+
+.navigacija{
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.navigacija ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-weight: bold;
+}
+
+.navigacija ul li {
+  margin: 0;
+}
+
+.navigacija ul li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navigacija ul li a:hover,
+.navigacija ul li a:focus {
+  background-color: black;
+  color: white;
+}
+
+.vertical-nav {
+  width: 200px;
+  float: left;
+  position: fixed;
+}
+
+.vertical-nav ul {
+  list-style: none;
+  background-color: black;
+  margin-top: 20px;
+  
+}
+
+.vertical-nav ul li a {
+  display: block;
+  padding: 0.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.vertical-nav ul li a:hover,
+.vertical-nav ul li a:focus,
+.vertical-nav ul li a.active {
+  background-color: white;
+  color: black;
+}
+
+.hero {
+  background: url('pozadina.jpg') center/cover no-repeat;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 0.1;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-left: 220px;
+  padding: 1rem;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.product h3 {
+  margin-top: 0.5rem;
+}
+
+.product a{
+  text-decoration: none;
+  color: black;
+}
+  
+.product img{
+	width: 230px;
+	height: 300px;
+}
+
+.product .price {
+  font-weight: bold;
+}
+
+.product .material {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #999;
+}
+
+.prijava {
+  margin: 2rem auto;
+  width: 300px;
+}
+
+.prijava form input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.prijava form input[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.prijava form input[type="submit"]:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-info {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.footer-info a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.footer-info a:hover
+{
+	text-decoration: none;
+	color: #777;
+}
+
+.social-links a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  color: #777; 
+  font-size: 0.8rem;
+}
+
+.social-links a::before {
+  display: inline-block;
+  margin-right: 4px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.social-links a[href*="instagram"]::before {
+  content: "\f16d";
+}
+
+.social-links a[href*="facebook"]::before {
+  content: "\f09a";
+}
+
+.social-links a:hover {
+  color: black;
+}
+
+.social-links img {
+	height: 20px;
+	width: 20px;
+	border-radius: 5px;
+}
